@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/SplashScreen.unity
+    guid: 7c8f3c68e19445c49813a8224a62b707
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 10fe156262ac40744acc391db7b7e2cd
+  - enabled: 1
+    path: Assets/Scenes/TheGame.unity
+    guid: bc5d113d176d86d468b5dea4ddc11ff9
+  - enabled: 1
+    path: Assets/Scenes/Repaired.unity
+    guid: ce446b304db6d4648bb918f58df2aa91
+  - enabled: 1
+    path: Assets/Scenes/NoPlanes.unity
+    guid: 1ae73075aa20eaa40b5e3a5f7b787bd1
+  - enabled: 1
+    path: Assets/Scenes/About.unity
+    guid: 9946633734f0ec34e8a78b05f3c63f03
+  - enabled: 1
+    path: Assets/Scenes/OptionsScreen.unity
+    guid: 16b01c7abce65d942ac6fac38b1fbc93
+  - enabled: 1
+    path: Assets/Scenes/SingInToGoogle.unity
+    guid: 84959c7203fdc324ba573192fc88ebeb
+  m_configObjects: {}
