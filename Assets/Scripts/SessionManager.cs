@@ -114,7 +114,7 @@ public class SessionManager : MonoBehaviour
         gameCanvas.SetActive(false);
         summaryPanel.SetActive(true);
 
-        var distance = FindObjectOfType<PlayerDistance>().GetBestPlayerDistance();
+        var distance = FindObjectOfType<PlayerDistance>().GetDistanceAmount();
         GooglePlayServicesManager.googlePlayServicesManager.SendDistanceToLeaderboard(distance);
 
     }
