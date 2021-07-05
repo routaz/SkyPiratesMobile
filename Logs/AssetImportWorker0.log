@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '2020.2/release' branch; Version is '2020.2.2f1 (068178b99f32) revision 426360'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Home; OS build 19042.928; Version 2009; 64bit' Language: 'fi' Physical Memory: 65208 MB
+OS: 'Windows 10 Home; OS build 19042.1052; Version 2009; 64bit' Language: 'fi' Physical Memory: 65208 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
  COMMAND LINE ARGUMENTS:
@@ -15,11 +15,11 @@ D:/GitHub_Repos/SkyPirates_Mobile/SkyPiratesMobile
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-1302
+28190
 Successfully changed project path to: D:/GitHub_Repos/SkyPirates_Mobile/SkyPiratesMobile
 D:/GitHub_Repos/SkyPirates_Mobile/SkyPiratesMobile
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 45.97 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 42.43 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.2.2f1 (068178b99f32)
 [Subsystems] Discovering subsystems at path D:/Unity/2020.2.2f1/Editor/Data/Resources/UnitySubsystems
@@ -35,231 +35,26 @@ Initialize mono
 Mono path[0] = 'D:/Unity/2020.2.2f1/Editor/Data/Managed'
 Mono path[1] = 'D:/Unity/2020.2.2f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'D:/Unity/2020.2.2f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56996
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56672
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: D:/Unity/2020.2.2f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: D:/Unity/2020.2.2f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
 Register platform support module: D:/Unity/2020.2.2f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001607 seconds.
+Registered in 0.001340 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 32.69 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 32.28 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.390 seconds
+- Completed reload, in  1.190 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.005467 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.78 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-GPGSUpgrader start
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-GooglePlayGames.Editor.GPGSUpgrader:.cctor () (at Assets/GooglePlayGames/Editor/GPGSUpgrader.cs:38)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-(Filename: Assets/GooglePlayGames/Editor/GPGSUpgrader.cs Line: 38)
-
-GPGSUpgrader done
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-GooglePlayGames.Editor.GPGSUpgrader:.cctor () (at Assets/GooglePlayGames/Editor/GPGSUpgrader.cs:105)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-(Filename: Assets/GooglePlayGames/Editor/GPGSUpgrader.cs Line: 105)
-
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.830 seconds
-Platform modules already initialized, skipping
-========================================================================
-Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 0.77 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1680 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 75.7 MB.
-System memory in use after: 75.7 MB.
-
-Unloading 80 unused Assets to reduce memory usage. Loaded Objects now: 2071.
-Total: 2.466000 ms (FindLiveObjects: 0.262900 ms CreateObjectMapping: 0.053600 ms MarkObjects: 2.047700 ms  DeleteObjects: 0.100600 ms)
-
-========================================================================
-Received Import Request.
-  path: Assets/Scenes/SplashScreen.unity
-  artifactKey: Guid(7c8f3c68e19445c49813a8224a62b707) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SplashScreen.unity using Guid(7c8f3c68e19445c49813a8224a62b707) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a11cae9f81e8780faad87bf545edaca') in 0.010388 seconds
-  Import took 0.013055 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.005768 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.93 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-GPGSUpgrader start
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-GooglePlayGames.Editor.GPGSUpgrader:.cctor () (at Assets/GooglePlayGames/Editor/GPGSUpgrader.cs:38)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-(Filename: Assets/GooglePlayGames/Editor/GPGSUpgrader.cs Line: 38)
-
-GPGSUpgrader done
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-GooglePlayGames.Editor.GPGSUpgrader:.cctor () (at Assets/GooglePlayGames/Editor/GPGSUpgrader.cs:105)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-(Filename: Assets/GooglePlayGames/Editor/GPGSUpgrader.cs Line: 105)
-
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.946 seconds
-Platform modules already initialized, skipping
-Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(589824) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 0.93 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1667 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 74.7 MB.
-System memory in use after: 74.8 MB.
-
-Unloading 71 unused Assets to reduce memory usage. Loaded Objects now: 2073.
-Total: 2.573200 ms (FindLiveObjects: 0.284100 ms CreateObjectMapping: 0.053500 ms MarkObjects: 2.192600 ms  DeleteObjects: 0.041500 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Import Request.
-  Time since last request: 47.374518 seconds.
-  path: Assets/Prefabs/OtherPrefabs/CoinCollectVFX.prefab
-  artifactKey: Guid(eb58f68427828ec499b8e72c2c31ca48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/OtherPrefabs/CoinCollectVFX.prefab using Guid(eb58f68427828ec499b8e72c2c31ca48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed6e76ec064f90bdce44952623db4def') in 0.059918 seconds
-  Import took 0.063369 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000247 seconds.
-  path: Assets/Prefabs/OtherPrefabs/WindSound.prefab
-  artifactKey: Guid(fde4c40bd71d3154e9f68c231b480fbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/OtherPrefabs/WindSound.prefab using Guid(fde4c40bd71d3154e9f68c231b480fbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '541ce49b65bd9498d92ae5e8aae2e82c') in 0.002744 seconds
-  Import took 0.005460 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000259 seconds.
-  path: Assets/Prefabs/OtherPrefabs/CoinCollectVFX.prefab
-  artifactKey: Guid(eb58f68427828ec499b8e72c2c31ca48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/OtherPrefabs/CoinCollectVFX.prefab using Guid(eb58f68427828ec499b8e72c2c31ca48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed6e76ec064f90bdce44952623db4def') in 0.003014 seconds
-  Import took 0.005613 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000207 seconds.
-  path: Assets/Prefabs/OtherPrefabs/Send_Click.prefab
-  artifactKey: Guid(b875cb36c93f24d4a964722e05f1b629) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/OtherPrefabs/Send_Click.prefab using Guid(b875cb36c93f24d4a964722e05f1b629) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57e33a9ccaf2881b9059fe139a1be6f9') in 0.002642 seconds
-  Import took 0.005140 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 171.851490 seconds.
-  path: Assets/Scripts
-  artifactKey: Guid(d5f0490ff3be65249aaf6f20b5383b1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts using Guid(d5f0490ff3be65249aaf6f20b5383b1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '249c7badab7fbc134602661720017a0b') in 0.001469 seconds
-  Import took 0.004785 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 17.256408 seconds.
-  path: Assets/Scripts/ReadMeTest.cs
-  artifactKey: Guid(b11be3efa254ba245880e0a216055eed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/ReadMeTest.cs using Guid(b11be3efa254ba245880e0a216055eed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c39d49a3fca654da86f26f5f9bbae4b9') in 0.008647 seconds
-  Import took 0.011690 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.007000 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.82 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-GPGSUpgrader start
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-GooglePlayGames.Editor.GPGSUpgrader:.cctor () (at Assets/GooglePlayGames/Editor/GPGSUpgrader.cs:38)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-(Filename: Assets/GooglePlayGames/Editor/GPGSUpgrader.cs Line: 38)
-
-GPGSUpgrader done
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-GooglePlayGames.Editor.GPGSUpgrader:.cctor () (at Assets/GooglePlayGames/Editor/GPGSUpgrader.cs:105)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-(Filename: Assets/GooglePlayGames/Editor/GPGSUpgrader.cs Line: 105)
-
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.848 seconds
-Platform modules already initialized, skipping
-Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(589824) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 0.82 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1668 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 74.8 MB.
-System memory in use after: 74.9 MB.
-
-Unloading 71 unused Assets to reduce memory usage. Loaded Objects now: 2076.
-Total: 2.617200 ms (FindLiveObjects: 0.382200 ms CreateObjectMapping: 0.118500 ms MarkObjects: 2.049400 ms  DeleteObjects: 0.065000 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.005153 seconds.
+Registered in 0.003951 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
@@ -292,18 +87,314 @@ Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.780 seconds
+- Completed reload, in  0.815 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.85 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1681 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 75.7 MB.
+System memory in use after: 75.8 MB.
+
+Unloading 80 unused Assets to reduce memory usage. Loaded Objects now: 2072.
+Total: 2.804900 ms (FindLiveObjects: 0.384100 ms CreateObjectMapping: 0.119900 ms MarkObjects: 2.192500 ms  DeleteObjects: 0.107100 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Sounds/PlaneCrash.mp3
+  artifactKey: Guid(3802c9e20d825ab49b1cace95710f3fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/PlaneCrash.mp3 using Guid(3802c9e20d825ab49b1cace95710f3fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c6db21d1d81bb76680f49d5b76d12f3') in 0.102328 seconds
+  Import took 0.105682 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000260 seconds.
+  path: Assets/Sprites/iconfinder_multimedia-64_809519.png
+  artifactKey: Guid(349d86f21d6f05449833a81eb1c53213) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/iconfinder_multimedia-64_809519.png using Guid(349d86f21d6f05449833a81eb1c53213) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c24e35561d8aac0b550a623c92c26a4f') in 0.079298 seconds
+  Import took 0.082340 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000228 seconds.
+  path: Assets/Sprites/jerrycan.png
+  artifactKey: Guid(968a73e36fda7f3428dc364933da538b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/jerrycan.png using Guid(968a73e36fda7f3428dc364933da538b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58b0fa9aef30352cbdbca2e9912c7746') in 0.020831 seconds
+  Import took 0.024082 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000210 seconds.
+  path: Assets/Sounds/BalloonAmbient.mp3
+  artifactKey: Guid(d66c97bcccf58d64d9fb0e86ef686266) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/BalloonAmbient.mp3 using Guid(d66c97bcccf58d64d9fb0e86ef686266) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d3f02d8f9c28f1f21a5f04c2d16dd57') in 0.010007 seconds
+  Import took 0.012958 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000211 seconds.
+  path: Assets/Sounds/smartsound_DESTRUCTION_EXPLOSION_Fuel_02.mp3
+  artifactKey: Guid(8c108242540f0254cb5989efc20d9de0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/smartsound_DESTRUCTION_EXPLOSION_Fuel_02.mp3 using Guid(8c108242540f0254cb5989efc20d9de0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb08d17d6f223b019de8a14f1d2d5003') in 0.016462 seconds
+  Import took 0.019463 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000263 seconds.
+  path: Assets/Sounds/audio_hero_GunCannon_DIGIJ02_20_6_370.wav
+  artifactKey: Guid(9221f128cde6b2e45966cca65e4e1db0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/audio_hero_GunCannon_DIGIJ02_20_6_370.wav using Guid(9221f128cde6b2e45966cca65e4e1db0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7b5e38fc4f1562d5492fb503632eec0') in 0.020136 seconds
+  Import took 0.023355 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000211 seconds.
+  path: Assets/Sprites/black-hand-drawn-arrow-11562849349fyffh1xzbt.png
+  artifactKey: Guid(a575a590edd998348ba92bf9dca7aec4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/black-hand-drawn-arrow-11562849349fyffh1xzbt.png using Guid(a575a590edd998348ba92bf9dca7aec4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e1dc9d1a1ddc9abcea408e8e64a0636') in 0.030111 seconds
+  Import took 0.033439 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000280 seconds.
+  path: Assets/Sprites/FuelBarMask.png
+  artifactKey: Guid(1a5730b13fac2ba4a885e058dabf39a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/FuelBarMask.png using Guid(1a5730b13fac2ba4a885e058dabf39a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5715eb1c8cf3f23d7e4ca0ec47c8be5') in 0.010659 seconds
+  Import took 0.013878 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000209 seconds.
+  path: Assets/Sprites/Face.psd
+  artifactKey: Guid(3fac9a6eb22a41248acda98a35179ec7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Face.psd using Guid(3fac9a6eb22a41248acda98a35179ec7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ebe72e99c16eb5a439d9d93579708640') in 0.036089 seconds
+  Import took 0.039061 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000298 seconds.
+  path: Assets/Sprites/laser_on.png
+  artifactKey: Guid(797be237ccdd8fe48a73f7dce5e340ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/laser_on.png using Guid(797be237ccdd8fe48a73f7dce5e340ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '650fa6a89c298c0ea772369d2215a4df') in 0.022185 seconds
+  Import took 0.025213 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000254 seconds.
+  path: Assets/Sounds/CannonBlast3.mp3
+  artifactKey: Guid(253c9f6f77abafd4fbd3db564115526a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/CannonBlast3.mp3 using Guid(253c9f6f77abafd4fbd3db564115526a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3eca0ff21489c0f98593fceb25bace11') in 0.011552 seconds
+  Import took 0.014501 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000306 seconds.
+  path: Assets/Sounds/smartsound_DESTRUCTION_EXPLOSION_Fuel_01.mp3
+  artifactKey: Guid(5aa3c7693f386554ea61e1ef8e354fd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/smartsound_DESTRUCTION_EXPLOSION_Fuel_01.mp3 using Guid(5aa3c7693f386554ea61e1ef8e354fd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f88bdeaf5e2d0e56f21632af5411908') in 0.016769 seconds
+  Import took 0.019840 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000201 seconds.
+  path: Assets/Sprites/SkyPiratesSplash.png
+  artifactKey: Guid(9855753e6aad6c5458de36f689eb7170) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/SkyPiratesSplash.png using Guid(9855753e6aad6c5458de36f689eb7170) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08f993a23f5e8eabac6790dc34a5f98f') in 0.057001 seconds
+  Import took 0.060204 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000369 seconds.
+  path: Assets/Sounds/CoinCollect_2.mp3
+  artifactKey: Guid(04d8220a6bcd64b4b819fbafa52bd613) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/CoinCollect_2.mp3 using Guid(04d8220a6bcd64b4b819fbafa52bd613) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17ddd2bac43931074144cffa4581ccef') in 0.009487 seconds
+  Import took 0.012487 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000257 seconds.
+  path: Assets/Sprites/trophy.png
+  artifactKey: Guid(448923429ac21ba45898964fc0bfbf27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/trophy.png using Guid(448923429ac21ba45898964fc0bfbf27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a789edd05fcb2b87c0f95508e584af10') in 0.014316 seconds
+  Import took 0.017596 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000191 seconds.
+  path: Assets/Sounds/CannonBlast1.mp3
+  artifactKey: Guid(79f5bc83c6d7ef14ca0f05c0f50111be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/CannonBlast1.mp3 using Guid(79f5bc83c6d7ef14ca0f05c0f50111be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '276a56c0804fc9c6585052b29d6f6fbe') in 0.010369 seconds
+  Import took 0.013479 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000256 seconds.
+  path: Assets/Sounds/GasCollect.mp3
+  artifactKey: Guid(d04dc6c39392dc4419344a7720a57606) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/GasCollect.mp3 using Guid(d04dc6c39392dc4419344a7720a57606) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2d0a11155dbfbf625d7d0c35f191c03') in 0.009714 seconds
+  Import took 0.012714 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000189 seconds.
+  path: Assets/Sprites/Cannon.png
+  artifactKey: Guid(1e19d467e14c41f47901632423527b43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Cannon.png using Guid(1e19d467e14c41f47901632423527b43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a9077a9992e6288dcc31cf81b74bbf7') in 0.017440 seconds
+  Import took 0.020671 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000291 seconds.
+  path: Assets/Sprites/coin.png
+  artifactKey: Guid(d214828fd48e8ea45a13e97072dd9d78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/coin.png using Guid(d214828fd48e8ea45a13e97072dd9d78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b573085b32e5c5a2e20a91fec13a079') in 0.011600 seconds
+  Import took 0.014837 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000291 seconds.
+  path: Assets/Sounds/CannonBlast2.mp3
+  artifactKey: Guid(1e4f4e4adffff59479617f1bcec30c5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/CannonBlast2.mp3 using Guid(1e4f4e4adffff59479617f1bcec30c5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6bcc7249f1f401043ed32cf1dbac84b') in 0.010276 seconds
+  Import took 0.013484 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000194 seconds.
+  path: Assets/Sprites/iconfinder_multimedia-62_809516.png
+  artifactKey: Guid(ab3b842b60d1c2443ba9051fd9eee4e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/iconfinder_multimedia-62_809516.png using Guid(ab3b842b60d1c2443ba9051fd9eee4e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a169cf0c5bb3fa00b5fb42b306e1b06') in 0.020506 seconds
+  Import took 0.023736 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000189 seconds.
+  path: Assets/Sprites/Plane.png
+  artifactKey: Guid(c41b8412297032d479b3753dd5171e25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Plane.png using Guid(c41b8412297032d479b3753dd5171e25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c79fb3bd4aa3bee3e044fd2f86e4d25') in 0.026852 seconds
+  Import took 0.030372 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000235 seconds.
+  path: Assets/Sounds/Wind.mp3
+  artifactKey: Guid(5af4f1d2bc5ce524d9b4cf1838c1ef38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/Wind.mp3 using Guid(5af4f1d2bc5ce524d9b4cf1838c1ef38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e322cb4631f2c7324bdbcd670981b6e8') in 0.011284 seconds
+  Import took 0.014269 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000184 seconds.
+  path: Assets/Sounds/Plane_Idle_1.mp3
+  artifactKey: Guid(42129ca52bd656940bfd7f792567826b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/Plane_Idle_1.mp3 using Guid(42129ca52bd656940bfd7f792567826b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38e3f7329a0b243902f5f716b3e6e89f') in 0.009793 seconds
+  Import took 0.012748 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000242 seconds.
+  path: Assets/Sprites/Ammo.png
+  artifactKey: Guid(a90ce41b5aba68a4b8f82cfe656b9dad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Ammo.png using Guid(a90ce41b5aba68a4b8f82cfe656b9dad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5647630771fd933e7a8e08eff42faf1') in 0.018472 seconds
+  Import took 0.021950 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000180 seconds.
+  path: Assets/Sprites/CBase.png
+  artifactKey: Guid(9f5e6bcff83c24a41bdfcef5c5c90f94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/CBase.png using Guid(9f5e6bcff83c24a41bdfcef5c5c90f94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9111a9cd41d0b7226c57615da9197533') in 0.017478 seconds
+  Import took 0.020762 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000185 seconds.
+  path: Assets/Sprites/HotairBalloon.png
+  artifactKey: Guid(f16b440fbffcbe849be931d26c6b867b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/HotairBalloon.png using Guid(f16b440fbffcbe849be931d26c6b867b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1ea4067cedbad9d7e50b969d92025f1') in 0.025494 seconds
+  Import took 0.031146 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000291 seconds.
+  path: Assets/Sounds/Click.mp3
+  artifactKey: Guid(ab96f591cd853524888b38d4b49784ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/Click.mp3 using Guid(ab96f591cd853524888b38d4b49784ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1555a61bccac88e5af6774adbe1ac30') in 0.009537 seconds
+  Import took 0.012678 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000188 seconds.
+  path: Assets/Sprites/TitleBanner.png
+  artifactKey: Guid(ab7316986ab37ce4bbdb4b0f7fd2ec84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TitleBanner.png using Guid(ab7316986ab37ce4bbdb4b0f7fd2ec84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5bca499a89bc44b5dd5ba110d2709df7') in 0.029110 seconds
+  Import took 0.032100 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000245 seconds.
+  path: Assets/Sounds/CoinCollect_1.mp3
+  artifactKey: Guid(0341a29308c07df4eb1539e1bc76772d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/CoinCollect_1.mp3 using Guid(0341a29308c07df4eb1539e1bc76772d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6870e2af946f3cc301f733954c708530') in 0.009632 seconds
+  Import took 0.012699 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000200 seconds.
+  path: Assets/Sounds/PurchaseSound.mp3
+  artifactKey: Guid(a5c57d481876edf4da353c84cb31d95f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/PurchaseSound.mp3 using Guid(a5c57d481876edf4da353c84cb31d95f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '278142c98aa2d822b012391f44cb72c8') in 0.017833 seconds
+  Import took 0.020921 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003746 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.86 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+GPGSUpgrader start
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GooglePlayGames.Editor.GPGSUpgrader:.cctor () (at Assets/GooglePlayGames/Editor/GPGSUpgrader.cs:38)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/GooglePlayGames/Editor/GPGSUpgrader.cs Line: 38)
+
+GPGSUpgrader done
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GooglePlayGames.Editor.GPGSUpgrader:.cctor () (at Assets/GooglePlayGames/Editor/GPGSUpgrader.cs:105)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/GooglePlayGames/Editor/GPGSUpgrader.cs Line: 105)
+
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.803 seconds
 Platform modules already initialized, skipping
 Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(589824) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 0.79 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.90 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1668 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 74.9 MB.
-System memory in use after: 75.0 MB.
+System memory in use before: 77.9 MB.
+System memory in use after: 78.0 MB.
 
-Unloading 71 unused Assets to reduce memory usage. Loaded Objects now: 2078.
-Total: 2.405500 ms (FindLiveObjects: 0.246000 ms CreateObjectMapping: 0.049200 ms MarkObjects: 2.057900 ms  DeleteObjects: 0.051200 ms)
+Unloading 71 unused Assets to reduce memory usage. Loaded Objects now: 2095.
+Total: 2.886600 ms (FindLiveObjects: 0.567100 ms CreateObjectMapping: 0.219400 ms MarkObjects: 2.056200 ms  DeleteObjects: 0.041900 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-AssetImportWorkerClient::OnTransportError - code=2 error=End of file
