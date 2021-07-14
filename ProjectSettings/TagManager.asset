@@ -71,3 +71,6 @@ TagManager:
   - name: Smokes
     uniqueID: 570449913
     locked: 0
+  - name: Clouds
+    uniqueID: 1516793077
+    locked: 0
