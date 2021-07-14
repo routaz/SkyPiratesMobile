@@ -31,9 +31,9 @@ public class LevelLoader : MonoBehaviour
     {
         if (GameManager.gameManager.GetPlayerLives() != 0)
         {
-            Debug.Log("LoadingNextScene");
-            Debug.Log(currentSceneIndex);
-            Debug.Log("NextScenePressed");
+            //Debug.Log("LoadingNextScene");
+            //Debug.Log(currentSceneIndex);
+            //Debug.Log("NextScenePressed");
             currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
             SceneManager.LoadScene(currentSceneIndex + 1);
         }
@@ -41,6 +41,11 @@ public class LevelLoader : MonoBehaviour
         {
             SceneManager.LoadScene("NoPlanes");
         }
+    }
+
+    public void LoadTutorial()
+    {
+        SceneManager.LoadScene("Tutorial");
     }
 
     public void LoadGame()

@@ -1222,7 +1222,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 499196039}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 75.11726, y: 222.6273, z: -1043.6028}
+  m_LocalPosition: {x: 75.11726, y: 222.6273, z: 1}
   m_LocalScale: {x: 3.139535, y: 3.139535, z: 3.139535}
   m_Children:
   - {fileID: 1332612262}
@@ -1718,6 +1718,10 @@ PrefabInstance:
     - target: {fileID: 697742042, guid: ba9cf148322172543820a11ec1fb68f4, type: 3}
       propertyPath: timeToWait
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 697742042, guid: ba9cf148322172543820a11ec1fb68f4, type: 3}
+      propertyPath: isTutorialWatched
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 697742042, guid: ba9cf148322172543820a11ec1fb68f4, type: 3}
       propertyPath: coolDownTimeAmount

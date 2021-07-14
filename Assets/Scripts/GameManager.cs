@@ -37,6 +37,8 @@ public class GameManager : MonoBehaviour
     public TimeSpan coolDownLeft;
 
     public int onGoingCoolDownTime;
+
+    public bool isTutorialWatched;
     
  
 
@@ -71,7 +73,15 @@ public class GameManager : MonoBehaviour
     IEnumerator WaitForTime()
     {
         yield return new WaitForSeconds(timeToWait);
-        LevelLoader.leveLoader.LoadNextScene();
+        if (!isTutorialWatched)
+        {
+            LevelLoader.leveLoader.LoadTutorial();
+           
+        }
+        else
+        {
+            LevelLoader.leveLoader.LoadNextScene();
+        }
 
 
     }
@@ -206,7 +216,7 @@ public class GameManager : MonoBehaviour
         data.playerLives = playerLives;
         data.setCoolDownTime = setCoolDownTime;
         data.shouldSetCoolDownTime = shouldSetCoolDownTime;
-        
+        data.isTutorialWatched = isTutorialWatched;
 
         bf.Serialize(file, data);
         file.Close();
@@ -229,6 +239,7 @@ public class GameManager : MonoBehaviour
             playerLives = data.playerLives;
             setCoolDownTime = data.setCoolDownTime;
             shouldSetCoolDownTime = data.shouldSetCoolDownTime;
+            isTutorialWatched = data.isTutorialWatched;
            
         }
 
@@ -247,6 +258,7 @@ class PlayerData
     public float bestPlayerDistance;
     public DateTime setCoolDownTime;
     public bool shouldSetCoolDownTime;
+    public bool isTutorialWatched;
 
 }
 

@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SingInToGoogle.unity
     guid: 84959c7203fdc324ba573192fc88ebeb
+  - enabled: 1
+    path: Assets/Scenes/Tutorial.unity
+    guid: 75448589684da96479bbbee3dc4cb154
   m_configObjects: {}
