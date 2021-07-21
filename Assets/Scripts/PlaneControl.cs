@@ -159,7 +159,8 @@ public class PlaneControl : MonoBehaviour
         
             if (col.gameObject.CompareTag("Coins"))
             {
-                {
+            GameManager.gameManager.AddCoinsAllTime();
+            {
                 FindObjectOfType<Coins>().CollectCoins(col);
                 }
             }
@@ -167,6 +168,7 @@ public class PlaneControl : MonoBehaviour
 
         if (col.gameObject.CompareTag("Pirate_Balloon"))
         {
+            GameManager.gameManager.DiedFromCrash();
             HitByLaser();
         }
  
@@ -189,6 +191,7 @@ public class PlaneControl : MonoBehaviour
 
         if(col.gameObject.CompareTag("CannonBall"))
         {
+            GameManager.gameManager.DiedFromCannon();
             HitByLaser();
         }
 

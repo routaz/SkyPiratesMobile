@@ -39,6 +39,12 @@ public class GameManager : MonoBehaviour
     public int onGoingCoolDownTime;
 
     public bool isTutorialWatched;
+
+    [Header("Achievements")]
+    public int coinsCollectedAlltime;
+    public float distanceTravelled;
+    public int timesDiedFromCannon;
+    public int timesDiedFromCrash;
     
  
 
@@ -153,8 +159,8 @@ public class GameManager : MonoBehaviour
         {
             totalCoins -= 1000;
             playerLives += amountIfPayedRepair;
-            GameManager.gameManager.shouldSetCoolDownTime = false;
-            GameManager.gameManager.timerStarted = false;
+            gameManager.shouldSetCoolDownTime = false;
+            gameManager.timerStarted = false;
             SaveGame();
             SceneManager.LoadScene("Repaired");
             Debug.Log("RepairButtonPressed");
@@ -189,6 +195,70 @@ public class GameManager : MonoBehaviour
         return playerLives;
     }
 
+    //Achievements
+
+    public void AddCoinsAllTime()
+    {
+        coinsCollectedAlltime++;
+        if(coinsCollectedAlltime == 1)
+        {
+            //OneForThePiggyBank Achi
+
+        }
+        if(coinsCollectedAlltime == 50)
+        {
+            //CoinCollectorAchievement
+        }
+        if(coinsCollectedAlltime == 100)
+        {
+            //Saving for Retirement achi
+        }
+        if(coinsCollectedAlltime == 1000)
+        {
+            //The Banker Achi
+        }
+
+    }
+
+    public void DistanceTravelledAchievement()
+    {
+        distanceTravelled = FindObjectOfType<PlayerDistance>().GetDistanceAmount();
+        if(distanceTravelled == 500)
+        {
+            //LearningToFlyAchi
+        }
+        if(distanceTravelled == 1000)
+        {
+            //where eagles Dare Achi
+        }
+        if(distanceTravelled == 3000)
+        {
+            //FlightOfThe Icarus achi
+        }
+        if(distanceTravelled == 5000)
+        {
+            //AcesHigh achi
+        }
+    }
+
+    public void DiedFromCannon()
+    {
+        timesDiedFromCannon++;
+        if(timesDiedFromCannon == 100)
+        {
+            //get rekt achi
+        }
+    }
+
+    public void DiedFromCrash()
+    {
+        timesDiedFromCrash++;
+        if(timesDiedFromCrash == 100)
+        {
+            //Kamikaze achi
+        }
+    }
+
     public void ResetAll()
     {
         PlayerPrefs.DeleteAll();
@@ -196,6 +266,9 @@ public class GameManager : MonoBehaviour
 
         bestPlayerDistance = 0;
         totalCoins = 0;
+        coinsCollectedAlltime = 0;
+        timesDiedFromCannon = 0;
+        timesDiedFromCrash = 0;
         SaveGame();
     }
 
@@ -211,6 +284,9 @@ public class GameManager : MonoBehaviour
         FileStream file = File.Create(Application.persistentDataPath + "/playerInfo.dat");
         PlayerData data = new PlayerData();
 
+        data.timesDiedFromCannon = timesDiedFromCannon;
+        data.timesDiedFromCrash = timesDiedFromCrash;
+        data.coinsCollectedAlltime = coinsCollectedAlltime;
         data.totalCoins = totalCoins;
         data.bestPlayerDistance = bestPlayerDistance;
         data.playerLives = playerLives;
@@ -234,6 +310,9 @@ public class GameManager : MonoBehaviour
             PlayerData data = (PlayerData)bf.Deserialize(file);
             file.Close();
 
+            timesDiedFromCannon = data.timesDiedFromCannon;
+            timesDiedFromCrash = data.timesDiedFromCrash;
+            coinsCollectedAlltime = data.coinsCollectedAlltime;
             totalCoins = data.totalCoins;
             bestPlayerDistance = data.bestPlayerDistance;
             playerLives = data.playerLives;
@@ -252,8 +331,10 @@ public class GameManager : MonoBehaviour
 [Serializable]
 class PlayerData
 {
-
+    public int timesDiedFromCannon;
+    public int timesDiedFromCrash;
     public int totalCoins;
+    public int coinsCollectedAlltime;
     public int playerLives;
     public float bestPlayerDistance;
     public DateTime setCoolDownTime;
