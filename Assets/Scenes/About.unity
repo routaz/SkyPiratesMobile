@@ -974,7 +974,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Main \nMenu"
+  m_text: 'MAIN
+
+    MENU'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 14d349e88091a4040a82205ab6d5161f, type: 2}
   m_sharedMaterial: {fileID: -518518607048851895, guid: 14d349e88091a4040a82205ab6d5161f,
@@ -1002,8 +1004,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1484,8 +1486,23 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 4794543947257511103, guid: ef1455a7978be6f4c9de4c66f80fff9d,
+      objectReference: {fileID: 21300000, guid: 8cafb5f883817c445a6cfe12f02d8c72,
         type: 3}
+    - target: {fileID: 7456811653520999453, guid: a373f572d3202c6469147fe3f3f2ab54,
+        type: 3}
+      propertyPath: m_Colors.m_NormalColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7456811653520999453, guid: a373f572d3202c6469147fe3f3f2ab54,
+        type: 3}
+      propertyPath: m_Colors.m_NormalColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7456811653520999453, guid: a373f572d3202c6469147fe3f3f2ab54,
+        type: 3}
+      propertyPath: m_Colors.m_NormalColor.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7456811653520999453, guid: a373f572d3202c6469147fe3f3f2ab54,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -1540,12 +1557,12 @@ PrefabInstance:
     - target: {fileID: 7456811653520999454, guid: a373f572d3202c6469147fe3f3f2ab54,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 150
+      value: 215
       objectReference: {fileID: 0}
     - target: {fileID: 7456811653520999454, guid: a373f572d3202c6469147fe3f3f2ab54,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 150
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 7456811653520999454, guid: a373f572d3202c6469147fe3f3f2ab54,
         type: 3}
@@ -1585,12 +1602,12 @@ PrefabInstance:
     - target: {fileID: 7456811653520999454, guid: a373f572d3202c6469147fe3f3f2ab54,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -0.000021203
+      value: 0.000015259
       objectReference: {fileID: 0}
     - target: {fileID: 7456811653520999454, guid: a373f572d3202c6469147fe3f3f2ab54,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -760
+      value: -769
       objectReference: {fileID: 0}
     - target: {fileID: 7456811653520999454, guid: a373f572d3202c6469147fe3f3f2ab54,
         type: 3}
