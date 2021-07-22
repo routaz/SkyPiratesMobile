@@ -745,7 +745,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'SAIL THE
 
-    SKY!'
+    SKIES!'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 14d349e88091a4040a82205ab6d5161f, type: 2}
   m_sharedMaterial: {fileID: -518518607048851895, guid: 14d349e88091a4040a82205ab6d5161f,
