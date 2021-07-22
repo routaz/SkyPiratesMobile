@@ -39,50 +39,53 @@ public class GooglePlayServicesManager : MonoBehaviour
 
     private void SignInToGooglePlayServices()
     {
-        PlayGamesPlatform.Instance.Authenticate(SignInInteractivity.CanPromptOnce, (result) =>
+        if (!isConnectedToGooglePlayServices)
         {
-            switch (result)
+            PlayGamesPlatform.Instance.Authenticate(SignInInteractivity.CanPromptOnce, (result) =>
             {
+                switch (result)
+                {
 
-                case SignInStatus.Success:
-                    isConnectedToGooglePlayServices = true;
-                    break;
+                    case SignInStatus.Success:
+                        isConnectedToGooglePlayServices = true;
+                        break;
 
-                default:
-                    isConnectedToGooglePlayServices = false;
-                    break;
-            }
-        });
-        
+                    default:
+                        isConnectedToGooglePlayServices = false;
+                        break;
+                }
+            });
+        }
+        else return;
     }
 
     public void ShowGoogleLeaderBoard()
     {
-        if (isConnectedToGooglePlayServices)
+        if (!isConnectedToGooglePlayServices)
+        {
+            LevelLoader.leveLoader.SignIn();
+        }
+        else
         {
             Social.ShowLeaderboardUI();
-        }
-        else if (!isConnectedToGooglePlayServices)
-        {
-            Debug.Log("open");
-            LevelLoader.leveLoader.SignIn();
         }
 
     }
     public void SendDistanceToLeaderboard(float distance)
     {
+        var flownDistance = Convert.ToInt32(distance);
         if (isConnectedToGooglePlayServices)
         {
-            var flownDistance = Convert.ToInt32(distance);
-            Social.ReportScore(flownDistance, GPGSIds.leaderboard_best_distance_by_the_scurviest_dogs, (success) =>
+            Social.ReportScore(flownDistance, GPGSIds.leaderboard_the_best_distances, (success) =>
            {
                if (!success) Debug.LogError("Unable to post highscore");
-
+               
            });
         }
         else
         {
             Debug.Log("Not Signed in...unable to report score");
+            Debug.Log(flownDistance);
         }
     }
 

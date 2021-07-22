@@ -40,6 +40,12 @@ public class PlayerDistance : MonoBehaviour
                 playerDistance = ((playerGO.transform.position.x + offSet) * 10);
                 distanceText.text = playerDistance.ToString("0");
 
+                if(playerDistance > 500 && playerDistance < 501 || playerDistance > 1000 && playerDistance < 1001 || playerDistance > 3000 && playerDistance < 3001 || playerDistance > 5000 && playerDistance < 5001)
+                {
+                    GameManager.gameManager.DistanceTravelledAchievement();
+                    Debug.Log("DistanceAchi" + playerDistance);
+                }
+
             }
             else
             {

@@ -24,7 +24,17 @@
 
 public static class GPGSIds
 {
-        public const string leaderboard_best_distance_by_the_scurviest_dogs = "CgkIz8uioKkVEAIQAQ"; // <GPGSID>
+        public const string achievement_to_the_moon = "CgkIz8uioKkVEAIQCQ"; // <GPGSID>
+        public const string achievement_aces_high = "CgkIz8uioKkVEAIQBw"; // <GPGSID>
+        public const string achievement_learning_to_fly = "CgkIz8uioKkVEAIQBA"; // <GPGSID>
+        public const string achievement_flight_of_the_icarus = "CgkIz8uioKkVEAIQCA"; // <GPGSID>
+        public const string leaderboard_the_best_distances = "CgkIz8uioKkVEAIQAQ"; // <GPGSID>
+        public const string achievement_one_for_the_piggy_bank = "CgkIz8uioKkVEAIQAg"; // <GPGSID>
+        public const string achievement_saving_for_retirement = "CgkIz8uioKkVEAIQBQ"; // <GPGSID>
+        public const string achievement_the_bank = "CgkIz8uioKkVEAIQBg"; // <GPGSID>
+        public const string achievement_get_rekt = "CgkIz8uioKkVEAIQCw"; // <GPGSID>
+        public const string achievement_coin_collector = "CgkIz8uioKkVEAIQAw"; // <GPGSID>
+        public const string achievement_kamikaze = "CgkIz8uioKkVEAIQCg"; // <GPGSID>
 
 }
 

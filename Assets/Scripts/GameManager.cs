@@ -1,12 +1,11 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.IO;
 using System;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
-using TMPro;
+using GooglePlayGames;
+
 
 public class GameManager : MonoBehaviour
 {
@@ -45,8 +44,10 @@ public class GameManager : MonoBehaviour
     public float distanceTravelled;
     public int timesDiedFromCannon;
     public int timesDiedFromCrash;
-    
- 
+
+    [SerializeField] string kamikazeAchi = "CgkIz8uioKkVEAIQCg";
+    [SerializeField] string getRektAchi = "CgkIz8uioKkVEAIQCw";
+
 
 
     void Awake()
@@ -202,20 +203,28 @@ public class GameManager : MonoBehaviour
         coinsCollectedAlltime++;
         if(coinsCollectedAlltime == 1)
         {
-            //OneForThePiggyBank Achi
+            Social.ReportProgress(GPGSIds.achievement_one_for_the_piggy_bank, 100.0f, (bool success) => {
+                // handle success or failure
+            });
 
         }
         if(coinsCollectedAlltime == 50)
         {
-            //CoinCollectorAchievement
+            Social.ReportProgress(GPGSIds.achievement_coin_collector, 100.0f, (bool success) => {
+                // handle success or failure
+            });
         }
         if(coinsCollectedAlltime == 100)
         {
-            //Saving for Retirement achi
+            Social.ReportProgress(GPGSIds.achievement_saving_for_retirement, 100.0f, (bool success) => {
+                // handle success or failure
+            });
         }
         if(coinsCollectedAlltime == 1000)
         {
-            //The Banker Achi
+            Social.ReportProgress(GPGSIds.achievement_the_bank, 100.0f, (bool success) => {
+                // handle success or failure
+            });
         }
 
     }
@@ -223,35 +232,55 @@ public class GameManager : MonoBehaviour
     public void DistanceTravelledAchievement()
     {
         distanceTravelled = FindObjectOfType<PlayerDistance>().GetDistanceAmount();
-        if(distanceTravelled == 500)
+        if(distanceTravelled > 500 && distanceTravelled < 1000)
         {
-            //LearningToFlyAchi
+            Social.ReportProgress(GPGSIds.achievement_learning_to_fly, 100.0f, (bool success) => {
+                // handle success or failure
+            });
         }
-        if(distanceTravelled == 1000)
+        if(distanceTravelled > 1000 && distanceTravelled < 3000)
         {
-            //where eagles Dare Achi
+            Social.ReportProgress(GPGSIds.achievement_aces_high, 100.0f, (bool success) => {
+                // handle success or failure
+            });
         }
-        if(distanceTravelled == 3000)
+        if(distanceTravelled > 3000 && distanceTravelled < 5000)
         {
-            //FlightOfThe Icarus achi
+            Social.ReportProgress(GPGSIds.achievement_flight_of_the_icarus, 100.0f, (bool success) => {
+                // handle success or failure
+            });
         }
-        if(distanceTravelled == 5000)
+        if(distanceTravelled > 5000)
         {
-            //AcesHigh achi
+            Social.ReportProgress(GPGSIds.achievement_to_the_moon, 100.0f, (bool success) => {
+                // handle success or failure
+            });
         }
     }
 
     public void DiedFromCannon()
     {
+        // increment achievement (achievement ID "Cfjewijawiu_QA") by 5 steps
+        PlayGamesPlatform.Instance.IncrementAchievement(
+            getRektAchi, 1, (bool success) => {
+            // handle success or failure
+        });
+
         timesDiedFromCannon++;
         if(timesDiedFromCannon == 100)
         {
-            //get rekt achi
+          //add achi
         }
     }
 
     public void DiedFromCrash()
     {
+        // increment achievement (achievement ID "Cfjewijawiu_QA") by 5 steps
+        PlayGamesPlatform.Instance.IncrementAchievement(
+            kamikazeAchi, 1, (bool success) => {
+                // handle success or failure
+            });
+
         timesDiedFromCrash++;
         if(timesDiedFromCrash == 100)
         {
