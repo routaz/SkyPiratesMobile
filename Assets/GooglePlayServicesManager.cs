@@ -63,7 +63,23 @@ public class GooglePlayServicesManager : MonoBehaviour
     {
         if (!isConnectedToGooglePlayServices)
         {
-            LevelLoader.leveLoader.SignIn();
+            PlayGamesPlatform.Instance.Authenticate(SignInInteractivity.CanPromptOnce, (result) =>
+            {
+                switch (result)
+                {
+
+                    case SignInStatus.Success:
+                        isConnectedToGooglePlayServices = true;
+                        Social.ShowLeaderboardUI();
+                        break;
+
+                    default:
+                        isConnectedToGooglePlayServices = false;
+                        LevelLoader.leveLoader.SignIn();
+                        break;
+                }
+            });
+            
         }
         else
         {
