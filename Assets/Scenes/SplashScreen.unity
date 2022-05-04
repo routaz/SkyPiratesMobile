@@ -1336,6 +1336,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 952627223, guid: 00e3d8eaf12abac47b492d179b5ebe64, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 952627223, guid: 00e3d8eaf12abac47b492d179b5ebe64, type: 3}
       propertyPath: googleSignPanel
       value: 
       objectReference: {fileID: 0}

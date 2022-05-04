@@ -1,13 +1,32 @@
 {
-    "m_SelectedDeviceId": "",
+    "m_SelectedDeviceId": "3da9dff2",
     "m_SelectedPackage": {
-        "deviceId": "",
-        "name": "",
-        "processId": 0,
+        "deviceId": "3da9dff2",
+        "name": "com.unity3d.mobileremote",
+        "processId": 16448,
         "exited": false
     },
     "m_SelectedPriority": 0,
-    "m_KnownPackagesForSerialization": [],
+    "m_KnownPackagesForSerialization": [
+        {
+            "deviceId": "3da9dff2",
+            "name": "com.unity3d.mobileremote",
+            "processId": 6460,
+            "exited": true
+        },
+        {
+            "deviceId": "3da9dff2",
+            "name": "com.android.vending",
+            "processId": 11395,
+            "exited": true
+        },
+        {
+            "deviceId": "3da9dff2",
+            "name": "com.unity3d.mobileremote",
+            "processId": 16448,
+            "exited": false
+        }
+    ],
     "m_Tags": {
         "m_Entries": [
             {
@@ -41,13 +60,24 @@
         ]
     },
     "m_MemoryViewerState": {
-        "MemoryWindowHeight": 0.0,
-        "MemoryWindowWidth": 0.0,
-        "MemoryTypeEnabled": [],
+        "MemoryWindowHeight": 300.0,
+        "MemoryWindowWidth": 170.0,
+        "MemoryTypeEnabled": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+        ],
         "MemoryGroup": 2,
         "Behavior": 0
     },
-    "m_Filter": "",
+    "m_Filter": "google",
     "m_FilterIsRegularExpression": false,
     "m_SymbolPaths": []
 }

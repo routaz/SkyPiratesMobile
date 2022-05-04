@@ -30,6 +30,8 @@ public class GooglePlayServicesManager : MonoBehaviour
 
         PlayGamesPlatform.DebugLogEnabled = true;
         PlayGamesPlatform.Activate();
+
+        SignInToGooglePlayServices();
     }
 
     private void Start()
@@ -48,10 +50,12 @@ public class GooglePlayServicesManager : MonoBehaviour
 
                     case SignInStatus.Success:
                         isConnectedToGooglePlayServices = true;
+                        Debug.Log("Logged in");
                         break;
 
                     default:
                         isConnectedToGooglePlayServices = false;
+                        Debug.Log("NOT Logged in");
                         break;
                 }
             });
@@ -63,7 +67,7 @@ public class GooglePlayServicesManager : MonoBehaviour
     {
         if (!isConnectedToGooglePlayServices)
         {
-            PlayGamesPlatform.Instance.Authenticate(SignInInteractivity.CanPromptOnce, (result) =>
+            PlayGamesPlatform.Instance.Authenticate(SignInInteractivity.CanPromptAlways, (result) =>
             {
                 switch (result)
                 {
@@ -107,7 +111,7 @@ public class GooglePlayServicesManager : MonoBehaviour
 
     public void SignInToGoogle()
     {
-        Debug.Log("Signed In");
+        
         PlayGamesPlatform.Instance.Authenticate(SignInInteractivity.CanPromptAlways, (result) =>
         {
             switch (result)
@@ -115,6 +119,7 @@ public class GooglePlayServicesManager : MonoBehaviour
                 case SignInStatus.Success:
                     isConnectedToGooglePlayServices = true;
                     LevelLoader.leveLoader.MainMenu();
+                    Debug.Log("Signed In");
                     break;
 
             }
