@@ -9,10 +9,23 @@ using TMPro;
 
 public class GPGSManager : MonoBehaviour
 {
+    public static GPGSManager gPGSManager;
     private PlayGamesClientConfiguration clientConfiguration;
     public TextMeshProUGUI statusText;
     public TextMeshProUGUI descriptionText;
 
+    void Awake()
+    {
+        if (gPGSManager == null)
+        {
+            DontDestroyOnLoad(gameObject);
+            gPGSManager = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
 
     // Start is called before the first frame update
     void Start()

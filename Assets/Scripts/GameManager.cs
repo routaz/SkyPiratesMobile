@@ -9,6 +9,7 @@ using GooglePlayGames;
 
 public class GameManager : MonoBehaviour
 {
+    public GPGSManager gPGSManager;
     public static GameManager gameManager;
     int currentSceneIndex;
     [SerializeField] float timeToWait = 4;
@@ -45,7 +46,7 @@ public class GameManager : MonoBehaviour
     public int timesDiedFromCannon;
     public int timesDiedFromCrash;
 
-    [SerializeField] string kamikazeAchi = "CgkIz8uioKkVEAIQCg";
+    //[SerializeField] string kamikazeAchi = "CgkIz8uioKkVEAIQCg";
     [SerializeField] string getRektAchi = "CgkIz8uioKkVEAIQCw";
 
 
@@ -260,31 +261,38 @@ public class GameManager : MonoBehaviour
 
     public void DiedFromCannon()
     {
+        PlayGamesPlatform platform = (PlayGamesPlatform)Social.Active;
         // increment achievement (achievement ID "Cfjewijawiu_QA") by 5 steps
-        PlayGamesPlatform.Instance.IncrementAchievement(
-            getRektAchi, 1, (bool success) => {
-            // handle success or failure
-        });
+        PlayGamesPlatform.Instance.IncrementAchievement(GPGSIds.achievement_kamikaze
+            , 1, (bool success) =>
+            {
+                gPGSManager.GetComponent<Achievements>().DoIncrementalAchievemtn(GPGSIds.achievement_kamikaze);
+            }
+            );
 
         timesDiedFromCannon++;
         if(timesDiedFromCannon == 100)
         {
-          //add achi
+            gPGSManager.GetComponent<Achievements>().DoGrantAchievement(GPGSIds.achievement_get_rekt);
         }
+   
     }
 
     public void DiedFromCrash()
     {
         // increment achievement (achievement ID "Cfjewijawiu_QA") by 5 steps
         PlayGamesPlatform.Instance.IncrementAchievement(
-            kamikazeAchi, 1, (bool success) => {
-                // handle success or failure
+            GPGSIds.achievement_kamikaze, 1, (bool success) => {
+                if(success)
+                {
+                    gPGSManager.GetComponent<Achievements>().DoIncrementalAchievemtn(GPGSIds.achievement_kamikaze);
+                }
             });
 
         timesDiedFromCrash++;
         if(timesDiedFromCrash == 100)
         {
-            //Kamikaze achi
+            gPGSManager.GetComponent<Achievements>().DoGrantAchievement(GPGSIds.achievement_get_rekt);
         }
     }
 
